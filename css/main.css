@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-wrapper, form {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.logo-wrapper {
+    margin: 2em;
+}
+form > * {
+    margin: 0.33em 0;
+}
+.background-wrapper {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-slides {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+
+
+.background-slides li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    z-index: 0;
+    opacity: 0;
+    /*animation: appear 2.5s linear infinite;*/
+}
+
+.background-slides li:nth-child(1) span { 
+    background-image: url(../assets/img/70.jpg);
+}
+.background-slides li:nth-child(2) span { 
+    background-image: url(../assets/img/lauryn.jpg);
+    animation-delay: 0.5s; 
+}
+.background-slides li:nth-child(3) span { 
+    background-image: url(../assets/img/raptors.jpg);
+    animation-delay: 1s; 
+}
+.background-slides li:nth-child(4) span { 
+    background-image: url(../assets/img/walkman.jpg);
+    animation-delay: 1.5s; 
+}
+.background-slides li:nth-child(5) span { 
+    background-image: url(../assets/img/city.jpg);
+    animation-delay: 2s; 
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes appear { 
+    0%{ 
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    98%{
+        opacity: 1;
+    }
+    95%{ 
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
