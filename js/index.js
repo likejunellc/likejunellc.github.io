@@ -7,7 +7,6 @@ imgArray = [
     "disco.jpg",
     "coral.jpg",
     "einstein.jpg",
-    "jayz.jpg",
     "trees.jpg",
     "knight.jpg",
     "city2.jpg",
@@ -16,6 +15,7 @@ imgArray = [
     "ratm.jpg",
     "sinatra.jpg",
     "nyc.jpg",
+    "jayz.jpg",
     "bubbles.jpg",
     "vintage.jpg",
 ]
@@ -49,7 +49,12 @@ const prefetch = async (imgArray) => {
     })
 }
 
+const renderDate = (target) => {
+    const d = new Date();
+    document.querySelector(target).innerHTML = d.getFullYear();
+}
 document.addEventListener('DOMContentLoaded', async (e) => {
     await prefetch(imgArray);
+    renderDate(".footer-date");
     slideshow(imgArray, ".background-slides");
 })
