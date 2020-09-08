@@ -15,11 +15,13 @@ imgArray = [
     "beatles.jpg",
     "ratm.jpg",
     "sinatra.jpg",
+    "nyc.jpg",
     "bubbles.jpg",
     "vintage.jpg",
 ]
 
-const siteURL = "https://likejunellc.github.io/like-june"
+//const siteURL = "https://likejunellc.github.io/like-june"
+const siteURL = ".."
 
 const slideshow = (imgArray, target) => {
     let counter = 0;
@@ -33,15 +35,21 @@ const slideshow = (imgArray, target) => {
         if(counter >= imgArray.length) {
             counter = 0;
         }
-    }, 233)
+    }, 500)
 }
 
-const changeImg = (target, img) => {
-    target = document.querySelector(target);
-    console.log(`changing to ${img}`);
-    target.style.background = `url(${img})`
+const prefetch = async (imgArray) => {
+    imgArray.forEach(img => {
+        const image = new Image();
+        image.onload = () => {
+            console.log(image)
+            return
+        };
+        image.src = `${siteURL}/assets/img/slides/${img}`
+    })
 }
 
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', async (e) => {
+    await prefetch(imgArray);
     slideshow(imgArray, ".background-slides");
 })
