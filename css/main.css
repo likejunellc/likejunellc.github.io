@@ -6,6 +6,11 @@ html, body {
     font-family: sans-serif;
 }
 
+
+body {
+    /*background: #fcfcfc;*/
+    background: #0f0f0f;
+}
 li {
     list-style-type: none;
 }
@@ -27,18 +32,16 @@ main {
     align-items: center;
     color: white;
 }
-.logo-wrapper {
-    margin: 2em;
-}
+
 .form-wrapper {
     height: auto;
     width: auto;
-    padding: 2em 5em;
+    padding: 0.5em 5em 2em 5em;
 }
 
 form > * {
-    font-family: 'Jockey One', sans-serif;
-    font-size: 133%;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 120%;
     filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.44));
 
 }
@@ -47,11 +50,15 @@ form > input {
     border: 0;
     padding: 0.3em;
     text-align: center;
+    font-weight: 200;
 }
+input::placeholder {
+    color: rgb(197, 197, 197);
+}
+
 form > label {
     margin: 0.5em auto;
-    text-align: center
-    ;
+    text-align: center;
     width: 100%;
 }
 
@@ -60,11 +67,28 @@ a {
     text-decoration: none;
 }
 
-
+.socials-row-container {
+    margin: 2em auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+.socials-row-container > h1{
+  cursor: default;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.33em;
+  font-size: 117%;
+  font-weight: 300;
+  letter-spacing: 0.66px;
+  filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.1));
+}
 .socials-row {
     width: 25vw;
     min-width: 225px;
-    max-width: 300px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -78,20 +102,26 @@ a {
     justify-content: space-between;
 }
 .socials-row li {
-    height: calc(32px + 1.5vw);
-    width: calc(32px + 1.5vw);
-    max-height: 50px;
-    max-width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-style: none;
-    border: 1px solid blue;
     border-radius: 100%;
     background: rgba(0, 0, 0, 0.4);
     color: white;
+    transition: 100ms ease-in;
+}
+.socials-row li:hover {
+    transform: scale(1.075);
 }
 
+.socials-row img {
+    width: calc(32px + 1.5vw);
+    max-width: 45px;
+    padding: 25%;
+    filter: invert(100%) drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.44));
+
+}
 .background-wrapper {
     width: 100%;
     height: 100%;
@@ -107,6 +137,7 @@ a {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
+    opacity: 0.69;
 }
 
 
@@ -144,6 +175,51 @@ a {
     background-image: url(../assets/img/city.jpg);
     animation-delay: 2s; 
 }
+
+.logo-wrapper > img {
+    min-width: 100px;
+    max-width: 133px;
+    width: 35vw;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.44));
+}
+.logo-wrapper > h1{
+    font-weight: bold;
+    font-family: "Jockey One", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.button-normal {
+    font-size: 17px;
+    border-radius: 0;
+    border: 1px solid #fcfcfc;;
+    margin: 1em 0 0 0;
+    padding: 0.33em 1em;
+    width: 100%;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: 150ms ease-in;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-normal img {
+    max-height: 33px;
+    filter: invert(100%);
+}
+.button-normal--transparent {
+    background: rgba(0, 0, 0, 0.1);
+}
+.button-normal--transparent:hover {
+    background: rgba(14, 148, 74, 0.75);
+    color: white;
+    border: 1px solid transparent;
+    transform: scale(1.025);
+}
+
 
 @keyframes fadeIn {
     0%{
