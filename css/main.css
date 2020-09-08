@@ -80,7 +80,7 @@ a {
   margin: 0 auto;
   text-align: center;
   padding: 1.33em;
-  font-size: 117%;
+  font-size: 17px;
   font-weight: 300;
   letter-spacing: 0.66px;
   filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.1));
@@ -220,6 +220,11 @@ a {
     transform: scale(1.025);
 }
 
+@media (max-width: 400px) {
+    .socials-row-container > h1 {
+        font-size: calc(11px + 0.72vw);
+    }
+}
 
 @keyframes fadeIn {
     0%{
