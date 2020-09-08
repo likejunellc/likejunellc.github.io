@@ -25,7 +25,7 @@ const slideshow = (imgArray, target) => {
     let counter = 0;
     target = document.querySelector(target);
     window.setInterval(() => {
-        target.style.background = `url(../assets/img/slides//${imgArray[counter]})`;
+        target.style.background = `url(${siteURL}/assets/img/slides/${imgArray[counter]})`;
         target.style.backgroundSize = "cover";
         target.style.backgroundPosition = "50% 50%";
         target.style.backgroundRepeat = "none";
