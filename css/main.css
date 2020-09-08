@@ -87,8 +87,8 @@ a {
 }
 .socials-row {
     width: 25vw;
-    min-width: 225px;
-    max-width: 250px;
+    min-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -184,9 +184,11 @@ a {
 }
 .logo-wrapper > h1{
     font-weight: bold;
-    font-family: "Jockey One", monospace;
+    font-family: "Source Sans Pro", monospace;
     margin: 0;
     padding: 0;
+    transform: scaleY(1.2);
+    font-size: 233%;
 }
 
 .button-normal {
