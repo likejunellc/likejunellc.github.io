@@ -20,8 +20,7 @@ imgArray = [
     "vintage.jpg",
 ]
 
-const siteURL = "https://likejunellc.github.io/like-june"
-//const siteURL = ".."
+const siteURL = window.location.origin
 
 const slideshow = (imgArray, target) => {
     let counter = 0;
