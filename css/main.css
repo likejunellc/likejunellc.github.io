@@ -178,9 +178,10 @@ a {
 
 .logo-wrapper > img {
     min-width: 100px;
-    max-width: 133px;
+    max-width: 214px;
     width: 35vw;
-    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.44));
+    image-rendering: crisp-edges;
+    filter: drop-shadow(0px 2px 11px rgba(0, 0, 0, 0.1));
 }
 .logo-wrapper > h1{
     font-weight: bold;
