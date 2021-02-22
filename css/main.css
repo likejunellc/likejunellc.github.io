@@ -237,12 +237,12 @@ a {
     transform: scale(1.025);
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .logo-wrapper img {
         width: 60vw;
     }
 }
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
     .socials-row-container > h1 {
         font-size: 11.5px;
         color: red;
