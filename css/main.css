@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+}
+
 html, body {
     margin: 0;
     font-family: sans-serif;
@@ -8,6 +13,8 @@ html, body {
 
 
 body {
+    position: fixed;
+    overflow: hidden;
     /*background: #fcfcfc;*/
     background: #0f0f0f;
 }
