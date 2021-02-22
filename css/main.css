@@ -237,6 +237,9 @@ a {
     border: 1px solid transparent;
     transform: scale(1.025);
 }
+.copyright {
+    font-size: 17px;
+}
 @media (max-width: 500px) {
     .logo-wrapper img {
         width: 60vw;
