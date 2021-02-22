@@ -84,7 +84,7 @@ a {
 
 .socials-row-container {
     margin: 2em auto;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
