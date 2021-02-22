@@ -3,7 +3,7 @@
 }
 
 html {
-    height: 100%;
+    height: -webkit-fill-available;
 }
 
 html, body {
@@ -13,9 +13,10 @@ html, body {
 
 
 body {
-    overflow: hidden;
     /*background: #fcfcfc;*/
     background: #0f0f0f;
+    min-height: -webkit-fill-available;
+
 }
 li {
     list-style-type: none;
