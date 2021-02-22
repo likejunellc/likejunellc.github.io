@@ -3,7 +3,7 @@
 }
 
 html {
-    height: -webkit-fill-available;
+  height: -webkit-fill-available;
 }
 
 html, body {
@@ -13,6 +13,7 @@ html, body {
 
 
 body {
+    overflow: hidden;
     /*background: #fcfcfc;*/
     background: #0f0f0f;
     min-height: -webkit-fill-available;
@@ -241,9 +242,13 @@ a {
     .socials-row-container > h1 {
         font-size: 13.33px;
     }
-    .socials-row-container > h1 {
-        font-size: calc(11px + 0.72vw);
+    .socials-row-container {
+        margin-bottom: 0.5em;
+        padding-bottom: 0;
     }
+    /*.socials-row-container > h1 {
+        font-size: calc(11px + 0.72vw);
+    }*/
 }
 @media (max-width: 800px) {
     .logo-wrapper img {
