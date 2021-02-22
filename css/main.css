@@ -46,11 +46,7 @@ footer {
     margin: 1.3em 0 0 0;
 }
 .hidden-flex-div {
-    height: 100vh;
     width: 100vw;
-    position: relative;
-    background: black;
-    outline: 1px solid black;
     z-index: 1;
 }
 
