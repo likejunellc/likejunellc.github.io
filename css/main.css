@@ -240,10 +240,10 @@ a {
 
 @media (max-width: 400px) {
     .socials-row-container > h1 {
-        font-size: 13.33px;
+        font-size: 12px;
     }
     .socials-row-container {
-        margin-bottom: 0.5em;
+        margin-bottom: 0.33em;
         padding-bottom: 0;
     }
     /*.socials-row-container > h1 {
