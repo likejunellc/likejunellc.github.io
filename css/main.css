@@ -235,12 +235,10 @@ a {
     border: 1px solid transparent;
     transform: scale(1.025);
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
     .logo-wrapper img {
         width: 60vw;
     }
-}
-@media screen and (max-width: 400px) {
     .socials-row-container > h1 {
         font-size: 11.5px;
         color: red;
