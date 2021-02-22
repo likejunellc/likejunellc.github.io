@@ -13,7 +13,6 @@ html, body {
 
 
 body {
-    position: fixed;
     overflow: hidden;
     /*background: #fcfcfc;*/
     background: #0f0f0f;
@@ -238,6 +237,9 @@ a {
 }
 
 @media (max-width: 400px) {
+    .socials-row-container > h1 {
+        font-size: 13.33px;
+    }
     .socials-row-container > h1 {
         font-size: calc(11px + 0.72vw);
     }
