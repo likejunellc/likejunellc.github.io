@@ -13,11 +13,9 @@ html, body {
 
 
 body {
-    overflow: hidden;
     /*background: #fcfcfc;*/
     background: #0f0f0f;
-    min-height: -webkit-fill-available;
-
+    height: 100vh;
 }
 li {
     list-style-type: none;
