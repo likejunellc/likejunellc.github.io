@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 html, body {
     margin: 0;
     font-family: sans-serif;
@@ -42,6 +38,7 @@ footer {
     margin: 1.3em 0 0 0;
 }
 .main-content-wrapper, form {
+    outline: 5px solid blue;
     position: relative;
     display: flex;
     z-index: 1;
@@ -242,7 +239,8 @@ a {
 
 @media (max-width: 400px) {
     .socials-row-container > h1 {
-        font-size: 11.66px;
+        font-size: 11.5px;
+        color: red;
     }
     .socials-row-container {
         outline: 1px solid red;
