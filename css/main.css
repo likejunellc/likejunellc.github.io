@@ -246,9 +246,9 @@ a {
         color: red;
     }
     .socials-row-container {
-        outline: 1px solid red;
-        margin-bottom: 0.33em;
-        padding-bottom: 0;
+        outline: 1px solid red !important;
+        margin-bottom: 0.33em !important;
+        padding-bottom: 0 !important;
     }
     /*.socials-row-container > h1 {
         font-size: calc(11px + 0.72vw);
