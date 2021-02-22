@@ -10,19 +10,19 @@ html, body {
 
 body {
     /*background: #fcfcfc;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    height: 100vh;
     background: #0f0f0f;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 li {
     list-style-type: none;
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -37,6 +37,15 @@ footer {
     justify-content: center;
     margin: 1.3em 0 0 0;
 }
+.hidden-flex-div {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: black;
+    outline: 1px solid black;
+    z-index: 1;
+}
+
 .main-content-wrapper, form {
     position: relative;
     display: flex;
@@ -82,8 +91,6 @@ a {
 
 .socials-row-container {
     margin: 2em auto;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -235,16 +242,16 @@ a {
     border: 1px solid transparent;
     transform: scale(1.025);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
     .logo-wrapper img {
         width: 60vw;
     }
+}
+@media screen and (max-width: 400px) {
     .socials-row-container > h1 {
         font-size: 11.5px;
-        color: red;
     }
     .socials-row-container {
-        outline: 1px solid red !important;
         margin-bottom: 0.33em !important;
         padding-bottom: 0 !important;
     }
