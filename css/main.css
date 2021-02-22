@@ -38,7 +38,6 @@ footer {
     margin: 1.3em 0 0 0;
 }
 .main-content-wrapper, form {
-    outline: 5px solid blue;
     position: relative;
     display: flex;
     z-index: 1;
@@ -237,11 +236,6 @@ a {
     transform: scale(1.025);
 }
 
-@media screen and (max-width: 800px) {
-    .logo-wrapper img {
-        width: 60vw;
-    }
-}
 @media screen and (max-width: 400px) {
     .socials-row-container > h1 {
         font-size: 11.5px;
@@ -255,6 +249,11 @@ a {
     /*.socials-row-container > h1 {
         font-size: calc(11px + 0.72vw);
     }*/
+}
+@media screen and (max-width: 800px) {
+    .logo-wrapper img {
+        width: 60vw;
+    }
 }
 
 @keyframes fadeIn {
