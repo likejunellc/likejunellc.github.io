@@ -8,7 +8,6 @@ imgArray = [
     "coral.jpg",
     "einstein.jpg",
     "trees.jpg",
-    "knight.jpg",
     "city2.jpg",
     "missy.jpg",
     "beatles.jpg",
